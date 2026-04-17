@@ -38,8 +38,8 @@ const login = async (req, res) => {
     // 🍪 COOKIE SET
     res.cookie("token", token, {
       httpOnly: true,
-      secure: process.env.NODE_ENV === "production", // https me hi send hoga
-      sameSite: "lax", // CSRF protection
+      secure: true, // https me hi send hoga
+      sameSite: "None", // CSRF protection
       maxAge: 7 * 24 * 60 * 60 * 1000, // 7 days
     });
 
