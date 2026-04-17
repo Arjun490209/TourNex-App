@@ -22,7 +22,7 @@ import AdminRoute from "./pages/desktop/AdminRoute";
 import CreateRoom from "./pages/desktop/pages/CreateRoom";
 import UpdateRoom from "./pages/desktop/pages/UpdateRoom";
 
-export const api = import.meta.env.VITE_API_URL || "http://localhost:5000/api";
+export const api = import.meta.env.VITE_API_URL || "https://tournex-app-backend.onrender.com";
 
 const App = () => {
   const dispatch = useDispatch();
